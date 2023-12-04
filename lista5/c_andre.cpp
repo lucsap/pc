@@ -16,5 +16,24 @@ const ll INF = INT64_MAX;
 int32_t main() {
     sws;
 
+    ll t, n;
+    cin >> t;
+
+    while(t--) {
+        cin >> n;
+        ll k = n;
+
+        while(k > 0) {
+            k = n - 1;
+            if ((n & k) == 0) {
+                break;
+            }
+            n = n & (n-1);
+        }
+
+        cout << k << endl;
+
+    }
+
     return 0;
 }

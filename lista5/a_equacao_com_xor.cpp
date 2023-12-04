@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 #define sws std::ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 #define ll long long
@@ -15,6 +16,11 @@ const ll INF = INT64_MAX;
 
 int32_t main() {
     sws;
+
+    unsigned int a, b, result;
+    cin >> a >> b;
+    result = a ^ b;
+    cout << result << endl;
 
     return 0;
 }

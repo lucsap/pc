@@ -16,5 +16,13 @@ const ll INF = INT64_MAX;
 int32_t main() {
     sws;
 
+    ll n, result = 1;
+    cin >> n;
+    while(result <= n) {
+        result *= 2;
+    }
+
+    cout << n << " " << ((result-1) ^ n) << endl;
+
     return 0;
 }
